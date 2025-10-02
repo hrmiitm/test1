@@ -1,1 +1,36 @@
-<h1> hello world </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake and Ladder - Static Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="brand">Snake and Ladder - Two Players</h1>
+  <div class="layout">
+    <div id="board" class="board" aria-label="Game board"></div>
+    <div class="panel">
+      <div class="dice-area">
+        <div id="dice" class="dice" aria-label="Dice showing value">1</div>
+        <button id="rollBtn" class="btn">Roll Dice</button>
+      </div>
+      <div class="info">
+        <div id="turnText" class="status">Turn: Player 1</div>
+        <div id="pos1Text" class="status">Player 1: 0</div>
+        <div id="pos2Text" class="status">Player 2: 0</div>
+      </div>
+      <button id="restartBtn" class="btn secondary">Restart</button>
+    </div>
+  </div>
+
+  <div id="winModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <h2 id="winMessage">Player X wins!</h2>
+      <button id="playAgainBtn" class="btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
